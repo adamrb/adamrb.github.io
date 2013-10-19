@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: iRex Illiad | You might find this interesting]]></title>
-  <link href="http://adamrb.github.io/blog/categories/irex-illiad/atom.xml" rel="self"/>
-  <link href="http://adamrb.github.io/"/>
-  <updated>2013-10-18T22:07:15-04:00</updated>
-  <id>http://adamrb.github.io/</id>
+  <link href="http://www.adamrb.com/blog/categories/irex-illiad/atom.xml" rel="self"/>
+  <link href="http://www.adamrb.com/"/>
+  <updated>2013-10-18T22:11:23-04:00</updated>
+  <id>http://www.adamrb.com/</id>
   <author>
     <name><![CDATA[Adam Boeglin]]></name>
     <email><![CDATA[adamrb@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[iRex Reader 1000]]></title>
-    <link href="http://adamrb.github.io/2008/09/19/irex-reader-1000/"/>
+    <link href="http://www.adamrb.com/2008/09/19/irex-reader-1000/"/>
     <updated>2008-09-19T09:42:00-04:00</updated>
-    <id>http://adamrb.github.io/2008/09/19/irex-reader-1000</id>
+    <id>http://www.adamrb.com/2008/09/19/irex-reader-1000</id>
     <content type="html"><![CDATA[<p>Details are starting to emerge about iRex&rsquo;s new reading device lineup.</p>
 
 <p>There will be 3 10.2 ince devices.  One base model, one with the touch screen, and the third with wifi, bluetooth, and 3g.</p>
@@ -48,18 +48,18 @@
   
   <entry>
     <title type="html"><![CDATA[iLiad traveling to Germany]]></title>
-    <link href="http://adamrb.github.io/2008/02/22/iliad-traveling-to-germany/"/>
+    <link href="http://www.adamrb.com/2008/02/22/iliad-traveling-to-germany/"/>
     <updated>2008-02-22T08:35:00-05:00</updated>
-    <id>http://adamrb.github.io/2008/02/22/iliad-traveling-to-germany</id>
+    <id>http://www.adamrb.com/2008/02/22/iliad-traveling-to-germany</id>
     <content type="html"><![CDATA[<p>I&rsquo;ll be difficult, but I think I&rsquo;ll manage.  I&rsquo;ll be without my iLiad for at least the next week.  It&rsquo;s going in for the battery replacement program, and I&rsquo;ve opted for the upgraded backplane.  It&rsquo;s great that an early adopter will be able to have what is basically a 2nd edition iLiad.</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[First Midori/WebKit iLiad Beta Release]]></title>
-    <link href="http://adamrb.github.io/2008/02/21/first-midoriwebkit-iliad-beta-release/"/>
+    <link href="http://www.adamrb.com/2008/02/21/first-midoriwebkit-iliad-beta-release/"/>
     <updated>2008-02-21T15:27:00-05:00</updated>
-    <id>http://adamrb.github.io/2008/02/21/first-midoriwebkit-iliad-beta-release</id>
+    <id>http://www.adamrb.com/2008/02/21/first-midoriwebkit-iliad-beta-release</id>
     <content type="html"><![CDATA[<p>I&rsquo;ve created an early beta release for my port of the <a href="http://webkit.org/">Webkit</a> based <a href="http://software.twotoasts.de/?page=midori">Midori</a> internet browser.</p>
 
 <p>There are quite a few <a href="https://dev.mobileread.com/iliad/webkitbrowser/query">bugs that need to be worked out</a> before it&rsquo;s ready for the average user, but it works well enough as a tech demo.</p>
@@ -80,9 +80,9 @@
   
   <entry>
     <title type="html"><![CDATA[Building a better web browser]]></title>
-    <link href="http://adamrb.github.io/2008/02/14/building-a-better-web-browser/"/>
+    <link href="http://www.adamrb.com/2008/02/14/building-a-better-web-browser/"/>
     <updated>2008-02-14T08:44:00-05:00</updated>
-    <id>http://adamrb.github.io/2008/02/14/building-a-better-web-browser</id>
+    <id>http://www.adamrb.com/2008/02/14/building-a-better-web-browser</id>
     <content type="html"><![CDATA[<p>I don&rsquo;t know why, but I&rsquo;ve decided I really want a good, working, web browser on the iLiad.  Maybe it&rsquo;s Kindle envy, maybe I spend too much time porting when I should be working, who knows.</p>
 
 <p>WebKit seems to be all the rage these days.  They have builds of it for just about every platform, and the iPhone has really brought it into the mainstream.  So my goal is to port WebKit to the iLiad and provide a useful interface for browsing.</p>
@@ -104,9 +104,9 @@ WebKit is compiling now.  Next, I&rsquo;ll build Epiphany and use the webkit cor
   
   <entry>
     <title type="html"><![CDATA[Finally!: Integrated FBReader 0.8.14 with ePub and Registry Support]]></title>
-    <link href="http://adamrb.github.io/2008/02/12/finally-integrated-fbreader-0-8-14-with-epub-and-registry-support/"/>
+    <link href="http://www.adamrb.com/2008/02/12/finally-integrated-fbreader-0-8-14-with-epub-and-registry-support/"/>
     <updated>2008-02-12T10:11:00-05:00</updated>
-    <id>http://adamrb.github.io/2008/02/12/finally-integrated-fbreader-0-8-14-with-epub-and-registry-support</id>
+    <id>http://www.adamrb.com/2008/02/12/finally-integrated-fbreader-0-8-14-with-epub-and-registry-support</id>
     <content type="html"><![CDATA[<p>It&rsquo;s been about 6 months since my last port of FBReader.  The talented FBReader developers have done a lot.  The most important addition is the support for ePub books.  You can view the full changelog at <a href="http://www.fbreader.org/">FBReader.org</a>.</p>
 
 <p>I, myself, have done a lot of things different for this release as well.</p>
