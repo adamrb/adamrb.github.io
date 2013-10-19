@@ -9,7 +9,7 @@
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content=" Blog Archives Recent Posts ">
+  <meta name="description" content="I ran into a problem where I was unable to create new instances because the ColdFusion instance manager wouldn&rsquo;t load when I clicked link. It &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,7 +66,835 @@
       <div class="blog-index">
   
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/08/13/troubleshooting-coldfusion-when-the-instancemanager-wont-load/">Troubleshooting Coldfusion When the Instancemanager Won&#8217;t Load.</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-13T16:45:41-04:00" pubdate data-updated="true">Aug 13<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I ran into a problem where I was unable to create new instances because the ColdFusion instance manager wouldn&rsquo;t load when I clicked link.</p>
+
+<p><img src="https://teamworks.herffjones.com/ssg/SiteAssets/Documentation%20Wiki/Troubleshooting%20when%20the%20Instance%20Manager%20Won%27t%20Load/instance_manager.png" alt="instance_manager.png" /></p>
+
+<p>It would just sit in a &ldquo;loading&rdquo; status.  Restarting the coldfusion9multi server didn&rsquo;t help.  Here&rsquo;s how to debug.</p>
+
+<ul>
+<li>Find the process id if the coldfusion instance manager</li>
+<li>ps axu | grep cfusion | grep jrun | grep -v grep | awk &lsquo;{print $2}&rsquo;</li>
+<li>Find all established connections from that process ID
+
+<ul>
+<li>lsof -P -n | grep $pid | grep ESTABLISHED</li>
+</ul>
+</li>
+</ul>
+
+
+<p><img src="http://www.adamrb.com/wp-content/uploads/2013/08/established_connections1.png" alt="established_connections" /></p>
+
+<ul>
+<li>Look for any established connections to the local IP that are duplicated or remain for more than a few seconds</li>
+<li><p>Find the process using the port it&rsquo;s trying to connect to.  This should be another coldfusion process that (likely) unresponsive</p>
+
+<ul>
+<li>lsof -P -ni :2936</li>
+<li>ps axu | grep $pid | grep -v grep
+<img src="http://www.adamrb.com/wp-content/uploads/2013/08/blocking_connection1.png" alt="blocking_connection" /></li>
+</ul>
+</li>
+<li><p>Kill that process</p></li>
+<li>Repeat for any others</li>
+</ul>
+
+
+<p>Viola!  Your Instance Manager should now load again.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/05/display-markdown-text-in-termal/">Display Markdown Text in a Termal</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-05T10:24:02-05:00" pubdate data-updated="true">Mar 5<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I really like the idea of Markdown text.  Being able to write in a natural format and then quickly convert to HTML (or a PDF) appeals to me in a way that is difficult to explain.  I thought that Latex would solve this need, but it&rsquo;s far too complex to use on a regular basis for simple documents.</p>
+
+<p>Markdown does exactly what I want.  It&rsquo;s simple, easy to learn, natural syntax makes creating documentation a breeze.  I also want to be able to quickly display text in a terminal (because who wants formatting marks when you&rsquo;re actually trying to read something?).  There were a few solutions online, none of them I was happy with, so I&rsquo;ve chained a few tools together, threw it in a shell script and off we go.</p>
+
+<ul>
+<li><p><a href="http://daringfireball.net/projects/markdown/">Download Markdown.</a></p>
+
+<ul>
+<li>Copy Markdown.py to /usr/local/bin/Markdown</li>
+</ul>
+</li>
+<li><p>Make sure you have w3m installed</p>
+
+<ul>
+<li>&lsquo;sudo apt-get install w3m&rsquo;</li>
+</ul>
+</li>
+<li><p>Download this Gist and place it somewhere in your $PATH</p></li>
+</ul>
+
+
+<p>[inline]
+[script src=&ldquo;<a href="https://gist.github.com/adamrb/5090451.js">https://gist.github.com/adamrb/5090451.js</a>&rdquo;][/script]
+[/inline]</p>
+
+<p>Doing so can quickly turn this:</p>
+
+<p><em> <a href="http://www.adamrb.com/wp-content/uploads/2013/03/Selection_33c189b_20130305.png"><img src="http://www.adamrb.com/wp-content/uploads/2013/03/Selection_33c189b_20130305.png" alt="Selection_33c189b_20130305" /></a></em></p>
+
+<p>To this:</p>
+
+<p><a href="http://www.adamrb.com/wp-content/uploads/2013/03/Selection_c6e4a8b_20130305.png"><img src="http://www.adamrb.com/wp-content/uploads/2013/03/Selection_c6e4a8b_20130305.png" alt="Selection_c6e4a8b_20130305" /></a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/02/18/parsing-hp-rhel-system-information-via-ssh/">Parsing HP - RHEL System Information via SSH</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-18T22:41:54-05:00" pubdate data-updated="true">Feb 18<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&rsquo;m often asked to give specifications quickly for systems I manage. I don&rsquo;t often know this off the top of my head&hellip; that&rsquo;s what computers are for.</p>
+
+<p>This script assumes a few things:</p>
+
+<ul>
+<li>You are running the script against an HP system with hpacucli installed</li>
+<li>It&rsquo;s running against RHEL 5 or 6.</li>
+</ul>
+
+
+<p>You can likely adapt it to fit your needs.  It&rsquo;s pretty simple, but gives a quick rundown of what most people ask about.
+Here&rsquo;s the output:</p>
+
+<pre><code>`System Info
+---------------
+Model Name: ProLiant DL380 G6`
+
+CPU Info
+---------------
+Model Name: Intel(R) Xeon(R) CPU E5540 @ 2.53GHz
+Physical CPUs: 2
+Cores per CPU: 4
+Total Processing Cores: 8
+Total Threads (including HT): 16
+
+
+
+
+Memory Info
+----------------
+Installed Memory: 72 GB
+Total Memory Slots: 18
+Memory Type: DDR3
+Memory Speed: 1333 MHz
+Memory Size(s):
+4096 MB (18)
+
+
+
+
+Disk Info
+---------------
+array A (SAS, Unused Space: 0 MB)
+logicaldrive 1 (136.7 GB, RAID 1, OK)
+physicaldrive 1I:1:1 (port 1I:box 1:bay 1, SAS, 146 GB, OK)
+physicaldrive 1I:1:2 (port 1I:box 1:bay 2, SAS, 146 GB, OK)
+array B (SAS, Unused Space: 0 MB)
+logicaldrive 2 (279.4 GB, RAID 1, OK)
+physicaldrive 2I:1:5 (port 2I:box 1:bay 5, SAS, 300 GB, OK)
+physicaldrive 2I:1:6 (port 2I:box 1:bay 6, SAS, 300 GB, OK)
+
+
+
+
+Software Information
+---------------
+Operating System: Red Hat Enterprise Linux Server release 6.3 (Santiago)
+</code></pre>
+
+<p>And here&rsquo;s the script:</p>
+
+<p>[gist id=&ldquo;4982876&rdquo;]</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/10/12/progression-of-a-smartphone-geek/">Progression of a Smartphone Geek</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-10-12T13:31:33-04:00" pubdate data-updated="true">Oct 12<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>It&rsquo;s come to my attention that I&rsquo;ve owned a lot of smartphones in my day.  I&rsquo;ve decided to chronicle my journey.</p>
+
+<h2>HP Jornada 545 + Kyocera 2135:</h2>
+
+<p><a href="http://picasaweb.google.com/lh/photo/1C3n5p4lJHlrnv1XobVDTg?feat=embedwebsite"><img src="http://lh4.ggpht.com/_bIFVdIBoxQM/TLX3gQoBnfI/AAAAAAAAB_w/zbC2dwghd08/s800/jornada_545.jpg" alt="" /></a> <a href="http://picasaweb.google.com/lh/photo/a6wHLUATfnJx9yHxVVawXw?feat=embedwebsite"><img src="http://lh4.ggpht.com/_bIFVdIBoxQM/TMHCCbWNr_I/AAAAAAAACAY/q8uY9Q6Pjrs/s288/kyo2135.jpg" alt="" /></a>
+While not technically a smart phone, this was my first PDA.  I also carried around a cheap Kyrocera phone as my first cell phone.</p>
+
+<p>It had a color screen, and I could keep track of my calendar and contacts in a single location.  There were a few productivity apps on it, and I could surf the web when it was docked to my computer.</p>
+
+<p>This is what got me hooked on PDA&rsquo;s</p>
+
+<p>OS:  PocketPC 2000
+Processor: 133Mhz
+Storage: 16MB
+RAM: 16MB</p>
+
+<h2>Kyocera 6035: (2001)</h2>
+
+<p><a href="http://picasaweb.google.com/lh/photo/ebkyhRqobKAMsStcyQCW-w?feat=embedwebsite"><img src="http://lh4.ggpht.com/_bIFVdIBoxQM/TLX3gazxKCI/AAAAAAAAB_0/zTKE_Zjc8sk/s400/Kyocera%206035.jpg" alt="" /></a>
+This was my first smartphone or &ldquo;pda phone&rdquo; as they were called.</p>
+
+<p>It was monochrome and used the PalmOS.  The front number pad flipped down, to allow a full stylus enabled touch screen.</p>
+
+<p>While it wasn&rsquo;t very &ldquo;cool&rdquo;, I could do basic calendaring and task management.  It has a few games and a WEP enabled web broswer where the airtime usage came out of my minutes.  I had an external fold out keyboard I used to take notes in class.</p>
+
+<p>I could even play a copter/cave game on it.</p>
+
+<p>Because it was so low powered, the battery life was amazing.  It rivaled even today&rsquo;s feature phones.</p>
+
+<p>OS:  PalmOS
+Processor: ??
+Storage: 8MB</p>
+
+<h2>Samsung SPH-i700: (2003)</h2>
+
+<p><a href="http://picasaweb.google.com/lh/photo/ouIgDa2rifkqCEMaJYSIVQ?feat=embedwebsite"><img src="http://lh3.ggpht.com/_bIFVdIBoxQM/TLX3g0c6E3I/AAAAAAAACAA/VP2z6NMKSO0/s800/Samsung_i700.jpg" alt="" /></a>
+My second smart phone was the samsung i700.</p>
+
+<p>This was my first Windows Mobile smartphone.   While it didn&rsquo;t have nearly the battery life of the Kyocera, it was far more powerful.  It had a color screen with a &ldquo;real&rdquo; operating system, and even a camera!  I thought the camera design was brilliant at the time, you could swivel it to take pictures or video of yourself, or turn it forward to take normal camera shots.</p>
+
+<p>It also had a built in IE webbrowser.  While it wasn&rsquo;t very good, it was useful for looking up information like movie times and weather.</p>
+
+<p>OS:  Windows Mobile 2003
+Processor: 300Mhz
+Storage: 16MB
+RAM: 16MB</p>
+
+<h2>Samsung i730: (2004)</h2>
+
+<p><a href="http://picasaweb.google.com/lh/photo/r2U4KYv_wYV8r5hXcYo5kg?feat=embedwebsite"><img src="http://lh4.ggpht.com/_bIFVdIBoxQM/TLX3hV0NzFI/AAAAAAAACAE/OxG1INi8RX0/s800/Samsung_i730.jpg" alt="" /></a>
+I bought the i730 the day it came out (and thus started my desire to always have the best smartphone available)</p>
+
+<p>It was a really nice phone.  The battery life wasn&rsquo;t great, but I was used to it by then.  I loved the slide up keyboard, I could easily type with one hand and then get it out of the way.</p>
+
+<p>The screen was smaller than the i700, but that was fine because it no longer looked like I was holding a brick to my face when I talked on it.  It didn&rsquo;t, however, have a camera.  I believe this was when I bought my digital camera w/ bluetooth connectivity to make up for it.</p>
+
+<p>This was also my first 3G (EVDO) smartphone.</p>
+
+<p>OS:  Windows Mobile 2003 2nd Edition
+Processor:  520Mhz
+Storage:  128MB w/ expandable SD card
+RAM: 64MB</p>
+
+<h2>Kyocera 7135: (2006)</h2>
+
+<p><a href="http://picasaweb.google.com/lh/photo/AbxrZ_tGQVYcMHanUINomw?feat=embedwebsite"><img src="http://lh4.ggpht.com/_bIFVdIBoxQM/TLX3glkALKI/AAAAAAAAB_4/qJajc96AAVg/s400/Kyocera_7135.jpg" alt="" /></a>
+I was forced to use the Kyocera 7135 as a work phone when I got a new job.  This was a serious downgrade form my i730, as it was only a generation higher than my first smartphone (the 6035).</p>
+
+<p>At this point, I seriously disliked the PalmOS, and while the battery life was respectable, I couldn&rsquo;t really do anything on it other than calendaring and contacts.</p>
+
+<p>OS:  PalmOS
+Processor: 33mhz
+Storage: 16MB</p>
+
+<h2>Samsung i760: (2007)</h2>
+
+<p><a href="http://picasaweb.google.com/lh/photo/MsKLdvz51UVPIuJx3KMFQg?feat=embedwebsite"><img src="http://lh4.ggpht.com/_bIFVdIBoxQM/TLX3isi05kI/AAAAAAAACAI/fUb6YF96WXw/s288/Samsung_i760.jpg" alt="" /></a>
+I was looking to upgrade my i730 to something faster and with better memory when the i760 came out.</p>
+
+<p>In hindsight, it was only an incremental upgrade to the i760, but it looked far more like a modern phone. and I finally had a solution to get my email &ldquo;pushed&rdquo; to my phone instead of it having to poll the server for updates.</p>
+
+<p>Windows Mobile 6 was getting to be quite popular around this time, so I had no trouble finding apps and games for the OS.</p>
+
+<p>OS:  Windows Mobile 6
+Processor:  400Mhz
+Storage:  128MB w/ expandable MicroSD card
+RAM: 64MB</p>
+
+<h2>Treo 650: (2007)</h2>
+
+<p><a href="http://picasaweb.google.com/lh/photo/cJ6ZQeDzoVvMIF0rca5UDQ?feat=embedwebsite"><img src="http://lh4.ggpht.com/_bIFVdIBoxQM/TLX3i_7LbXI/AAAAAAAACAQ/PxX74bkeiTQ/s400/Treo_650.jpg" alt="" /></a>
+I finally was able to upgrade my work phone to something that was at least tolerable.</p>
+
+<p>The Treo 650 was another hand-me-down.  But it had a nice color screen, a decent processor, and a few nice productivity apps.  It still didn&rsquo;t get much use, as the i760 was my primary phone.</p>
+
+<p>OS:  PalmOS
+Processor:  312Mhz
+Storage:  32MB</p>
+
+<h2>HTC Touch Pro: (2008)</h2>
+
+<p><a href="http://picasaweb.google.com/lh/photo/KxsEBOZvMTi8CIWyYWWDOA?feat=embedwebsite"><img src="http://lh5.ggpht.com/_bIFVdIBoxQM/TLX3iiVRRfI/AAAAAAAACAM/7Mg4hyy2Jyw/s400/Touch_Pro.jpg" alt="" /></a>
+The Touch Pro was another incremental improvement over the i760.  At this point, I was loosing hope that I&rsquo;d ever have a phone as cool or fast as the iPhone on Verizon&rsquo;s network.</p>
+
+<p>The touch pro was nice phone.  The processor was fast enough that you can browse the web at 3G speeds without too much difficulty (especially with the Skyfire Browser).   This was also the first phone I could really install custom ROMs on and customize to my liking.</p>
+
+<p>HTC also had a nice interface that made the Windows Mobile OS seem far less bland than it had gotten over the years.  However, it was still a windows mobile phone underneath.</p>
+
+<p>OS:  Windows Mobile 6.1
+Processor:  528Mhz
+Storage:  328MB w/ expandable MicroSD card
+RAM: 128MB</p>
+
+<h2>Motorola Droid: (2009)</h2>
+
+<p><a href="http://picasaweb.google.com/lh/photo/llGO5OUhgNodyseVbAa2wQ?feat=embedwebsite"><img src="http://lh4.ggpht.com/_bIFVdIBoxQM/TLX3g1I7EiI/AAAAAAAAB_8/mFjmE6nqg4U/s400/Motorola_Droid.jpg" alt="" /></a>
+When I first heard Google was building a phone OS, I thought &ldquo;cool, I hope it takes off&rdquo;.  When the Droid was announced, I knew I immediately had to have one.</p>
+
+<p>This was (and continues to be) the greatest phone I have ever owned.  It had turn-by-turn navigation, a great app marketplace,  and an unlocked and fully customizeable OS.  This was the first phone I owned that didn&rsquo;t have a reset button built into it because the OS was stable enough to not lock up on a semi-weekly basis.  It was also the first phone I owned without touch screen that required a styuls.</p>
+
+<p>The Droid has me thoughoughly hooked on the Android operating system.  Not only is it geek friendly, it&rsquo;s good enough for the average person.  I recommend it to anyone looking for a smartphone.</p>
+
+<p>OS: Android 2.2
+Processor:  550Mhz
+Storage:  256MB w/ expandable MicroSD card
+RAM: 256MB</p>
+
+<h2>What&rsquo;s next?</h2>
+
+<p>So what&rsquo;s coming next?</p>
+
+<p>I&rsquo;m currently waiting for my &ldquo;super phone&rdquo; as I call it.  It will be built on android, but I want it to have an impressive performance increase over my previous phones.  All of my WinMo phones were just slight improvements over each other.  My next phone will likely have a 4.2&#8221; screen, dual core (tegra?) processor, more than 512MB of RAM, a few gigabytes of built in storage, and a forward facing camera.  All this in addition to 4G (LTE) data reception.</p>
+
+<p>While there aren&rsquo;t any devices on the market that fit my requirements yet, there are a few to be rumoured in the works.  I&rsquo;ve always longed for a computer in my pocket (or rather, on my hip), with today&rsquo;s technology dream is very close to becoming a reality.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/07/30/jump-to-conclusions-app/">Jump to Conclusions App</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-07-30T13:00:30-04:00" pubdate data-updated="true">Jul 30<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Anyone who knows me, knows I have a certain obsession with the movie office space. I have a few red Swingline staplers, Initech coffee mugs, and various T-Shirts.</p>
+
+<p>I decided that I was in need of a &ldquo;Jump to Conclusions&rdquo; app for my phone (for those difficult decisions). If you don&rsquo;t know what this is, it&rsquo;s based on the Jump to Conclusion mat described by Tom Smykowski as a &ldquo;Mat that you put on the floor, that has different &#8220;conclusions&rdquo; written on it that you can &ldquo;jump&rdquo; to&#8221;.</p>
+
+<p>While some claimed it was a horrible idea, Tom went ahead with it and built a prototype.
+<a href="http://cms.home.adamrb.com/wp-content/uploads/2010/07/mat.png"><img src="http://cms.home.adamrb.com/wp-content/uploads/2010/07/mat.png" alt="mat" /></a></p>
+
+<p>I followed his design to build my Android application.
+<a href="http://cms.home.adamrb.com/wp-content/uploads/2010/07/app.png"><img src="http://cms.home.adamrb.com/wp-content/uploads/2010/07/app.png" alt="Jump to Conclusions App" /></a></p>
+
+<p>Similar to the mat, you open the app, hold the phone in your hand, and jump to conclusions. It will give you a random conclusion every time.</p>
+
+<p>I&rsquo;ve published it in the play store: <a href="https://play.google.com/store/apps/details?id=com.initech.mats">https://play.google.com/store/apps/details?id=com.initech.mats</a></p>
+
+<p>I&rsquo;m quite happy with the results.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/09/19/irex-reader-1000/">iRex Reader 1000</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-09-19T09:42:00-04:00" pubdate data-updated="true">Sep 19<span>th</span>, 2008</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Details are starting to emerge about iRex&rsquo;s new reading device lineup.</p>
+
+<p>There will be 3 10.2 ince devices.  One base model, one with the touch screen, and the third with wifi, bluetooth, and 3g.</p>
+
+<p>This is exciting news.  I&rsquo;ve always wanted the iLiad to be a little bit bigger.  I mostly use mine for business purposes (notes in meetings, reading documents, etc).  A bigger screen will be great for a paper alternative.  Especially if the device will be able read more documents natively.</p>
+
+<p>It&rsquo;ll be interesting to see the device and user interface.  I assume they&rsquo;re going to use the same software for the touchscreen and non touchscreen versions.  Maybe they will have more buttons and a scroll wheel like the kindle, or maybe use context menus like the cybook.  Time will tell.</p>
+
+<p>I do know for sure that I intend to buy the top level unit with all the bells and whistles.  I&rsquo;ll have to start saving now though&hellip; I do intend to keep developing and porting for the platform.  This is going to be an exciting time.</p>
+
+<p>A quick overview of what we know:</p>
+
+<ul>
+<li>Name: iRex Reader 1000</li>
+<li>10.2 Inch Screen</li>
+<li>eBook (Mobipocket?), PDF, Word, and html support (probably others)</li>
+<li>Stylus input (wacom?)</li>
+<li>60-70 hour battery life</li>
+<li>3 Versions</li>
+<li>Base &ndash; $650</li>
+<li>Touch Screen &ndash; $750</li>
+<li>Touchscreen + Bluetooth, Wifi, and 3G, $850</li>
+<li>16 levels of greyscale</li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/02/22/iliad-traveling-to-germany/">iLiad Traveling to Germany</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-02-22T08:35:00-05:00" pubdate data-updated="true">Feb 22<span>nd</span>, 2008</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&rsquo;ll be difficult, but I think I&rsquo;ll manage.  I&rsquo;ll be without my iLiad for at least the next week.  It&rsquo;s going in for the battery replacement program, and I&rsquo;ve opted for the upgraded backplane.  It&rsquo;s great that an early adopter will be able to have what is basically a 2nd edition iLiad.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/02/21/first-midoriwebkit-iliad-beta-release/">First Midori/WebKit iLiad Beta Release</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-02-21T15:27:00-05:00" pubdate data-updated="true">Feb 21<span>st</span>, 2008</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&rsquo;ve created an early beta release for my port of the <a href="http://webkit.org/">Webkit</a> based <a href="http://software.twotoasts.de/?page=midori">Midori</a> internet browser.</p>
+
+<p>There are quite a few <a href="https://dev.mobileread.com/iliad/webkitbrowser/query">bugs that need to be worked out</a> before it&rsquo;s ready for the average user, but it works well enough as a tech demo.</p>
+
+<p>You can see some screenshots below:</p>
+
+<p><a href="http://3.bp.blogspot.com/_bIFVdIBoxQM/R73f-foiXaI/AAAAAAAAAwE/DfFOkWF6l90/s1600-h/midorilauncher.png"><img src="http://3.bp.blogspot.com/_bIFVdIBoxQM/R73f-foiXaI/AAAAAAAAAwE/DfFOkWF6l90/s400/midorilauncher.png" alt="" /></a></p>
+
+<p><a href="http://2.bp.blogspot.com/_bIFVdIBoxQM/R73gIPoiXbI/AAAAAAAAAwM/Ya4KYHKnTa0/s1600-h/webkitorg.png"><img src="http://2.bp.blogspot.com/_bIFVdIBoxQM/R73gIPoiXbI/AAAAAAAAAwM/Ya4KYHKnTa0/s400/webkitorg.png" alt="" /></a></p>
+
+<p><a href="http://1.bp.blogspot.com/_bIFVdIBoxQM/R73gO_oiXcI/AAAAAAAAAwU/Pt9AjX7TbRc/s1600-h/midoribeta.png"><img src="http://1.bp.blogspot.com/_bIFVdIBoxQM/R73gO_oiXcI/AAAAAAAAAwU/Pt9AjX7TbRc/s400/midoribeta.png" alt="" /></a></p>
+
+<p>If you&rsquo;d like to try it, you can download the first beta here: <a href="https://dev.mobileread.com/dist/AdamB/webkitbrowser/midori.zip">Midori Beta 1</a></p>
+
+<p>You will need developer access on your iLiad to launch it.  You&rsquo;ll also need to start an internet connection with another script.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/02/14/building-a-better-web-browser/">Building a Better Web Browser</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-02-14T08:44:00-05:00" pubdate data-updated="true">Feb 14<span>th</span>, 2008</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I don&rsquo;t know why, but I&rsquo;ve decided I really want a good, working, web browser on the iLiad.  Maybe it&rsquo;s Kindle envy, maybe I spend too much time porting when I should be working, who knows.</p>
+
+<p>WebKit seems to be all the rage these days.  They have builds of it for just about every platform, and the iPhone has really brought it into the mainstream.  So my goal is to port WebKit to the iLiad and provide a useful interface for browsing.</p>
+
+<ul>
+<li>It must be able to use the pagebar to page up and down.</li>
+<li><p>Screen refreshes must not be obtrusive, and should be responsive. (Native refreshes only, no hacked libX11)</p></li>
+<li><p>Support for Bookmarks and Recent URL&rsquo;s.</p></li>
+<li>Easy to install package that can run from anywhere.
+WebKit is compiling now.  Next, I&rsquo;ll build Epiphany and use the webkit core.  As long as that goes smoothly, I can work on refreshes and the rest of the application.  Wish me luck&hellip;</li>
+</ul>
+
+
+<p>Edit: I think I found a better front end than Epipany.  <a href="http://software.twotoasts.de/?page=midori">Midori</a> is much smaller and more light weight than Epiphany.  It should be able to do everything required and be relatively quick on the iLiad.</p>
+
+<p>I had Midori up and running with the Webkit backend, but nothing would display because WebKit was made to work with gtk 2.8, and the iLiad has 2.6.  I believe I&rsquo;ve found a patch, so I&rsquo;m recompiling (takes about 2 hours on my dev pc).  Hopefully I should have an early working application soon&hellip;.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/02/12/finally-integrated-fbreader-0-8-14-with-epub-and-registry-support/">Finally!: Integrated FBReader 0.8.14 With ePub and Registry Support</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-02-12T10:11:00-05:00" pubdate data-updated="true">Feb 12<span>th</span>, 2008</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>It&rsquo;s been about 6 months since my last port of FBReader.  The talented FBReader developers have done a lot.  The most important addition is the support for ePub books.  You can view the full changelog at <a href="http://www.fbreader.org/">FBReader.org</a>.</p>
+
+<p>I, myself, have done a lot of things different for this release as well.</p>
+
+<ul>
+<li>I&rsquo;ve removed the FBReader toolbar, and thus, disabled the internal library.
+
+<ul>
+<li>This was mostly done to speed up porting time.  With the library removed, much less needed to be done to the code of the program to port it.</li>
+<li>All refreshes are done internally.  No hacked libX11 is used!</li>
+</ul>
+</li>
+<li>By default, FBReader will add supported file extensions to the registry
+
+<ul>
+<li>This makes FBReader act like any other viewer on the iLiad.</li>
+<li>FBReader settings and configuration will be saved to /mnt/settings so a software update should not erase them.</li>
+</ul>
+</li>
+<li>The installer no longer requires a memory card, and will be installed to internal memory.
+
+<ul>
+<li>The internal memory of the iLiad has 7.8MB free after installing FBReader.  It should not interfere with anything else installed internally.</li>
+</ul>
+</li>
+</ul>
+
+
+<p>Based on a support thread I made, file extensions supported are:</p>
+
+<ul>
+<li>chm</li>
+<li>rtf</li>
+<li>oeb</li>
+<li>opf</li>
+<li>epub</li>
+<li>fb2</li>
+<li><p>tcr
+Because the toolbar is gone, most of the important functions can now be accessed by the hardware buttons:</p></li>
+<li><p>Upper Left/Quit Button</p>
+
+<ul>
+<li>Will cancel out of TOC screen, and will quit when inside the book.</li>
+</ul>
+</li>
+<li>Page Bar Forward
+
+<ul>
+<li>Short Press
+
+<ul>
+<li>Next Page</li>
+</ul>
+</li>
+<li>Long Press
+
+<ul>
+<li>Redo</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Page Bar Backward
+
+<ul>
+<li>Short Press
+
+<ul>
+<li>Previous Page</li>
+</ul>
+</li>
+<li>Long Press
+
+<ul>
+<li>Undo</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Up Arrow
+
+<ul>
+<li>Short Press
+
+<ul>
+<li>Previous TOC Section</li>
+</ul>
+</li>
+<li>Long Press
+
+<ul>
+<li>Increase Font Size</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Dot or &ldquo;Enter&rdquo; Button
+
+<ul>
+<li>Short Press
+
+<ul>
+<li>Show Table of Contents</li>
+</ul>
+</li>
+<li>Long Press
+
+<ul>
+<li>Rotate Page</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Down Arrow
+
+<ul>
+<li>Short Press
+
+<ul>
+<li>Next TOC Section</li>
+</ul>
+</li>
+<li>Long Press
+
+<ul>
+<li>Decrease Font Size</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<p>Installation of this is simple.  You&rsquo;ll need firmware 2.12 and Developer Shell access.  Unzip the file, and copy anywhere on your iLiad.  You will need to restart your iLiad when it prompts you.  After you&rsquo;ve restarted, you can delete the installation directory.</p>
+
+<p><strong>There will be no icon to run FBReader, you&rsquo;ll need to select a book from the contentlister with one of the file extensions listed above.</strong></p>
+
+<p>Supported books will have a valid icon.</p>
+
+<p>You can find the release and discussion at MobileRead: <a href="http://www.mobileread.com/forums/showthread.php?t=20490">http://www.mobileread.com/forums/showthread.php?t=20490</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
+    
+      <a class="prev" href="/blog/page/2/">&larr; Older</a>
     
     <a href="/blog/archives">Blog Archives</a>
     
@@ -78,10 +906,68 @@
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
     
+      <li class="post">
+        <a href="/blog/2013/08/13/troubleshooting-coldfusion-when-the-instancemanager-wont-load/">Troubleshooting Coldfusion When the Instancemanager Won&#8217;t Load.</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/03/05/display-markdown-text-in-termal/">Display Markdown Text in a Termal</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/02/18/parsing-hp-rhel-system-information-via-ssh/">Parsing HP - RHEL System Information via SSH</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/10/12/progression-of-a-smartphone-geek/">Progression of a Smartphone Geek</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/07/30/jump-to-conclusions-app/">Jump to Conclusions App</a>
+      </li>
+    
   </ul>
 </section>
 
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/adamrb">@adamrb</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
 
+        github.showRepos({
+            user: 'adamrb',
+            count: 5,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/113977874267213949305?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
 
 
 
@@ -101,6 +987,14 @@
 
 
 
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
 
 
 

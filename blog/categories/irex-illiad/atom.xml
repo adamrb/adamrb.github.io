@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: iRex Illiad | My Octopress Blog]]></title>
+  <link href="http://adamrb.github.io/blog/categories/irex-illiad/atom.xml" rel="self"/>
+  <link href="http://adamrb.github.io/"/>
+  <updated>2013-10-18T21:38:22-04:00</updated>
+  <id>http://adamrb.github.io/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    <email><![CDATA[adamrb@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[iRex Reader 1000]]></title>
+    <link href="http://adamrb.github.io/blog/2008/09/19/irex-reader-1000/"/>
+    <updated>2008-09-19T09:42:00-04:00</updated>
+    <id>http://adamrb.github.io/blog/2008/09/19/irex-reader-1000</id>
+    <content type="html"><![CDATA[<p>Details are starting to emerge about iRex&rsquo;s new reading device lineup.</p>
+
+<p>There will be 3 10.2 ince devices.  One base model, one with the touch screen, and the third with wifi, bluetooth, and 3g.</p>
+
+<p>This is exciting news.  I&rsquo;ve always wanted the iLiad to be a little bit bigger.  I mostly use mine for business purposes (notes in meetings, reading documents, etc).  A bigger screen will be great for a paper alternative.  Especially if the device will be able read more documents natively.</p>
+
+<p>It&rsquo;ll be interesting to see the device and user interface.  I assume they&rsquo;re going to use the same software for the touchscreen and non touchscreen versions.  Maybe they will have more buttons and a scroll wheel like the kindle, or maybe use context menus like the cybook.  Time will tell.</p>
+
+<p>I do know for sure that I intend to buy the top level unit with all the bells and whistles.  I&rsquo;ll have to start saving now though&hellip; I do intend to keep developing and porting for the platform.  This is going to be an exciting time.</p>
+
+<p>A quick overview of what we know:</p>
+
+<ul>
+<li>Name: iRex Reader 1000</li>
+<li>10.2 Inch Screen</li>
+<li>eBook (Mobipocket?), PDF, Word, and html support (probably others)</li>
+<li>Stylus input (wacom?)</li>
+<li>60-70 hour battery life</li>
+<li>3 Versions</li>
+<li>Base &ndash; $650</li>
+<li>Touch Screen &ndash; $750</li>
+<li>Touchscreen + Bluetooth, Wifi, and 3G, $850</li>
+<li>16 levels of greyscale</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[iLiad traveling to Germany]]></title>
+    <link href="http://adamrb.github.io/blog/2008/02/22/iliad-traveling-to-germany/"/>
+    <updated>2008-02-22T08:35:00-05:00</updated>
+    <id>http://adamrb.github.io/blog/2008/02/22/iliad-traveling-to-germany</id>
+    <content type="html"><![CDATA[<p>I&rsquo;ll be difficult, but I think I&rsquo;ll manage.  I&rsquo;ll be without my iLiad for at least the next week.  It&rsquo;s going in for the battery replacement program, and I&rsquo;ve opted for the upgraded backplane.  It&rsquo;s great that an early adopter will be able to have what is basically a 2nd edition iLiad.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[First Midori/WebKit iLiad Beta Release]]></title>
+    <link href="http://adamrb.github.io/blog/2008/02/21/first-midoriwebkit-iliad-beta-release/"/>
+    <updated>2008-02-21T15:27:00-05:00</updated>
+    <id>http://adamrb.github.io/blog/2008/02/21/first-midoriwebkit-iliad-beta-release</id>
+    <content type="html"><![CDATA[<p>I&rsquo;ve created an early beta release for my port of the <a href="http://webkit.org/">Webkit</a> based <a href="http://software.twotoasts.de/?page=midori">Midori</a> internet browser.</p>
+
+<p>There are quite a few <a href="https://dev.mobileread.com/iliad/webkitbrowser/query">bugs that need to be worked out</a> before it&rsquo;s ready for the average user, but it works well enough as a tech demo.</p>
+
+<p>You can see some screenshots below:</p>
+
+<p><a href="http://3.bp.blogspot.com/_bIFVdIBoxQM/R73f-foiXaI/AAAAAAAAAwE/DfFOkWF6l90/s1600-h/midorilauncher.png"><img src="http://3.bp.blogspot.com/_bIFVdIBoxQM/R73f-foiXaI/AAAAAAAAAwE/DfFOkWF6l90/s400/midorilauncher.png" alt="" /></a></p>
+
+<p><a href="http://2.bp.blogspot.com/_bIFVdIBoxQM/R73gIPoiXbI/AAAAAAAAAwM/Ya4KYHKnTa0/s1600-h/webkitorg.png"><img src="http://2.bp.blogspot.com/_bIFVdIBoxQM/R73gIPoiXbI/AAAAAAAAAwM/Ya4KYHKnTa0/s400/webkitorg.png" alt="" /></a></p>
+
+<p><a href="http://1.bp.blogspot.com/_bIFVdIBoxQM/R73gO_oiXcI/AAAAAAAAAwU/Pt9AjX7TbRc/s1600-h/midoribeta.png"><img src="http://1.bp.blogspot.com/_bIFVdIBoxQM/R73gO_oiXcI/AAAAAAAAAwU/Pt9AjX7TbRc/s400/midoribeta.png" alt="" /></a></p>
+
+<p>If you&rsquo;d like to try it, you can download the first beta here: <a href="https://dev.mobileread.com/dist/AdamB/webkitbrowser/midori.zip">Midori Beta 1</a></p>
+
+<p>You will need developer access on your iLiad to launch it.  You&rsquo;ll also need to start an internet connection with another script.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Building a better web browser]]></title>
+    <link href="http://adamrb.github.io/blog/2008/02/14/building-a-better-web-browser/"/>
+    <updated>2008-02-14T08:44:00-05:00</updated>
+    <id>http://adamrb.github.io/blog/2008/02/14/building-a-better-web-browser</id>
+    <content type="html"><![CDATA[<p>I don&rsquo;t know why, but I&rsquo;ve decided I really want a good, working, web browser on the iLiad.  Maybe it&rsquo;s Kindle envy, maybe I spend too much time porting when I should be working, who knows.</p>
+
+<p>WebKit seems to be all the rage these days.  They have builds of it for just about every platform, and the iPhone has really brought it into the mainstream.  So my goal is to port WebKit to the iLiad and provide a useful interface for browsing.</p>
+
+<ul>
+<li>It must be able to use the pagebar to page up and down.</li>
+<li><p>Screen refreshes must not be obtrusive, and should be responsive. (Native refreshes only, no hacked libX11)</p></li>
+<li><p>Support for Bookmarks and Recent URL&rsquo;s.</p></li>
+<li>Easy to install package that can run from anywhere.
+WebKit is compiling now.  Next, I&rsquo;ll build Epiphany and use the webkit core.  As long as that goes smoothly, I can work on refreshes and the rest of the application.  Wish me luck&hellip;</li>
+</ul>
+
+
+<p>Edit: I think I found a better front end than Epipany.  <a href="http://software.twotoasts.de/?page=midori">Midori</a> is much smaller and more light weight than Epiphany.  It should be able to do everything required and be relatively quick on the iLiad.</p>
+
+<p>I had Midori up and running with the Webkit backend, but nothing would display because WebKit was made to work with gtk 2.8, and the iLiad has 2.6.  I believe I&rsquo;ve found a patch, so I&rsquo;m recompiling (takes about 2 hours on my dev pc).  Hopefully I should have an early working application soon&hellip;.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Finally!: Integrated FBReader 0.8.14 with ePub and Registry Support]]></title>
+    <link href="http://adamrb.github.io/blog/2008/02/12/finally-integrated-fbreader-0-8-14-with-epub-and-registry-support/"/>
+    <updated>2008-02-12T10:11:00-05:00</updated>
+    <id>http://adamrb.github.io/blog/2008/02/12/finally-integrated-fbreader-0-8-14-with-epub-and-registry-support</id>
+    <content type="html"><![CDATA[<p>It&rsquo;s been about 6 months since my last port of FBReader.  The talented FBReader developers have done a lot.  The most important addition is the support for ePub books.  You can view the full changelog at <a href="http://www.fbreader.org/">FBReader.org</a>.</p>
+
+<p>I, myself, have done a lot of things different for this release as well.</p>
+
+<ul>
+<li>I&rsquo;ve removed the FBReader toolbar, and thus, disabled the internal library.
+
+<ul>
+<li>This was mostly done to speed up porting time.  With the library removed, much less needed to be done to the code of the program to port it.</li>
+<li>All refreshes are done internally.  No hacked libX11 is used!</li>
+</ul>
+</li>
+<li>By default, FBReader will add supported file extensions to the registry
+
+<ul>
+<li>This makes FBReader act like any other viewer on the iLiad.</li>
+<li>FBReader settings and configuration will be saved to /mnt/settings so a software update should not erase them.</li>
+</ul>
+</li>
+<li>The installer no longer requires a memory card, and will be installed to internal memory.
+
+<ul>
+<li>The internal memory of the iLiad has 7.8MB free after installing FBReader.  It should not interfere with anything else installed internally.</li>
+</ul>
+</li>
+</ul>
+
+
+<p>Based on a support thread I made, file extensions supported are:</p>
+
+<ul>
+<li>chm</li>
+<li>rtf</li>
+<li>oeb</li>
+<li>opf</li>
+<li>epub</li>
+<li>fb2</li>
+<li><p>tcr
+Because the toolbar is gone, most of the important functions can now be accessed by the hardware buttons:</p></li>
+<li><p>Upper Left/Quit Button</p>
+
+<ul>
+<li>Will cancel out of TOC screen, and will quit when inside the book.</li>
+</ul>
+</li>
+<li>Page Bar Forward
+
+<ul>
+<li>Short Press
+
+<ul>
+<li>Next Page</li>
+</ul>
+</li>
+<li>Long Press
+
+<ul>
+<li>Redo</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Page Bar Backward
+
+<ul>
+<li>Short Press
+
+<ul>
+<li>Previous Page</li>
+</ul>
+</li>
+<li>Long Press
+
+<ul>
+<li>Undo</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Up Arrow
+
+<ul>
+<li>Short Press
+
+<ul>
+<li>Previous TOC Section</li>
+</ul>
+</li>
+<li>Long Press
+
+<ul>
+<li>Increase Font Size</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Dot or &ldquo;Enter&rdquo; Button
+
+<ul>
+<li>Short Press
+
+<ul>
+<li>Show Table of Contents</li>
+</ul>
+</li>
+<li>Long Press
+
+<ul>
+<li>Rotate Page</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Down Arrow
+
+<ul>
+<li>Short Press
+
+<ul>
+<li>Next TOC Section</li>
+</ul>
+</li>
+<li>Long Press
+
+<ul>
+<li>Decrease Font Size</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<p>Installation of this is simple.  You&rsquo;ll need firmware 2.12 and Developer Shell access.  Unzip the file, and copy anywhere on your iLiad.  You will need to restart your iLiad when it prompts you.  After you&rsquo;ve restarted, you can delete the installation directory.</p>
+
+<p><strong>There will be no icon to run FBReader, you&rsquo;ll need to select a book from the contentlister with one of the file extensions listed above.</strong></p>
+
+<p>Supported books will have a valid icon.</p>
+
+<p>You can find the release and discussion at MobileRead: <a href="http://www.mobileread.com/forums/showthread.php?t=20490">http://www.mobileread.com/forums/showthread.php?t=20490</a></p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Android | My Octopress Blog]]></title>
+  <link href="http://adamrb.github.io/blog/categories/android/atom.xml" rel="self"/>
+  <link href="http://adamrb.github.io/"/>
+  <updated>2013-10-18T21:38:22-04:00</updated>
+  <id>http://adamrb.github.io/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    <email><![CDATA[adamrb@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Jump to Conclusions App]]></title>
+    <link href="http://adamrb.github.io/blog/2010/07/30/jump-to-conclusions-app/"/>
+    <updated>2010-07-30T13:00:30-04:00</updated>
+    <id>http://adamrb.github.io/blog/2010/07/30/jump-to-conclusions-app</id>
+    <content type="html"><![CDATA[<p>Anyone who knows me, knows I have a certain obsession with the movie office space. I have a few red Swingline staplers, Initech coffee mugs, and various T-Shirts.</p>
+
+<p>I decided that I was in need of a &ldquo;Jump to Conclusions&rdquo; app for my phone (for those difficult decisions). If you don&rsquo;t know what this is, it&rsquo;s based on the Jump to Conclusion mat described by Tom Smykowski as a &ldquo;Mat that you put on the floor, that has different "conclusions&rdquo; written on it that you can &ldquo;jump&rdquo; to".</p>
+
+<p>While some claimed it was a horrible idea, Tom went ahead with it and built a prototype.
+<a href="http://cms.home.adamrb.com/wp-content/uploads/2010/07/mat.png"><img src="http://cms.home.adamrb.com/wp-content/uploads/2010/07/mat.png" alt="mat" /></a></p>
+
+<p>I followed his design to build my Android application.
+<a href="http://cms.home.adamrb.com/wp-content/uploads/2010/07/app.png"><img src="http://cms.home.adamrb.com/wp-content/uploads/2010/07/app.png" alt="Jump to Conclusions App" /></a></p>
+
+<p>Similar to the mat, you open the app, hold the phone in your hand, and jump to conclusions. It will give you a random conclusion every time.</p>
+
+<p>I&rsquo;ve published it in the play store: <a href="https://play.google.com/store/apps/details?id=com.initech.mats">https://play.google.com/store/apps/details?id=com.initech.mats</a></p>
+
+<p>I&rsquo;m quite happy with the results.</p>
+]]></content>
+  </entry>
+  
+</feed>

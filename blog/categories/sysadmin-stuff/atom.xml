@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Sysadmin Stuff | My Octopress Blog]]></title>
+  <link href="http://adamrb.github.io/blog/categories/sysadmin-stuff/atom.xml" rel="self"/>
+  <link href="http://adamrb.github.io/"/>
+  <updated>2013-10-18T21:38:22-04:00</updated>
+  <id>http://adamrb.github.io/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    <email><![CDATA[adamrb@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Display Markdown Text in a termal]]></title>
+    <link href="http://adamrb.github.io/blog/2013/03/05/display-markdown-text-in-termal/"/>
+    <updated>2013-03-05T10:24:02-05:00</updated>
+    <id>http://adamrb.github.io/blog/2013/03/05/display-markdown-text-in-termal</id>
+    <content type="html"><![CDATA[<p>I really like the idea of Markdown text.  Being able to write in a natural format and then quickly convert to HTML (or a PDF) appeals to me in a way that is difficult to explain.  I thought that Latex would solve this need, but it&rsquo;s far too complex to use on a regular basis for simple documents.</p>
+
+<p>Markdown does exactly what I want.  It&rsquo;s simple, easy to learn, natural syntax makes creating documentation a breeze.  I also want to be able to quickly display text in a terminal (because who wants formatting marks when you&rsquo;re actually trying to read something?).  There were a few solutions online, none of them I was happy with, so I&rsquo;ve chained a few tools together, threw it in a shell script and off we go.</p>
+
+<ul>
+<li><p><a href="http://daringfireball.net/projects/markdown/">Download Markdown.</a></p>
+
+<ul>
+<li>Copy Markdown.py to /usr/local/bin/Markdown</li>
+</ul>
+</li>
+<li><p>Make sure you have w3m installed</p>
+
+<ul>
+<li>&lsquo;sudo apt-get install w3m&rsquo;</li>
+</ul>
+</li>
+<li><p>Download this Gist and place it somewhere in your $PATH</p></li>
+</ul>
+
+
+<p>[inline]
+[script src=&ldquo;<a href="https://gist.github.com/adamrb/5090451.js">https://gist.github.com/adamrb/5090451.js</a>&rdquo;][/script]
+[/inline]</p>
+
+<p>Doing so can quickly turn this:</p>
+
+<p><em> <a href="http://www.adamrb.com/wp-content/uploads/2013/03/Selection_33c189b_20130305.png"><img src="http://www.adamrb.com/wp-content/uploads/2013/03/Selection_33c189b_20130305.png" alt="Selection_33c189b_20130305" /></a></em></p>
+
+<p>To this:</p>
+
+<p><a href="http://www.adamrb.com/wp-content/uploads/2013/03/Selection_c6e4a8b_20130305.png"><img src="http://www.adamrb.com/wp-content/uploads/2013/03/Selection_c6e4a8b_20130305.png" alt="Selection_c6e4a8b_20130305" /></a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Parsing HP - RHEL System Information via SSH]]></title>
+    <link href="http://adamrb.github.io/blog/2013/02/18/parsing-hp-rhel-system-information-via-ssh/"/>
+    <updated>2013-02-18T22:41:54-05:00</updated>
+    <id>http://adamrb.github.io/blog/2013/02/18/parsing-hp-rhel-system-information-via-ssh</id>
+    <content type="html"><![CDATA[<p>I&rsquo;m often asked to give specifications quickly for systems I manage. I don&rsquo;t often know this off the top of my head&hellip; that&rsquo;s what computers are for.</p>
+
+<p>This script assumes a few things:</p>
+
+<ul>
+<li>You are running the script against an HP system with hpacucli installed</li>
+<li>It&rsquo;s running against RHEL 5 or 6.</li>
+</ul>
+
+
+<p>You can likely adapt it to fit your needs.  It&rsquo;s pretty simple, but gives a quick rundown of what most people ask about.
+Here&rsquo;s the output:</p>
+
+<pre><code>`System Info
+---------------
+Model Name: ProLiant DL380 G6`
+
+CPU Info
+---------------
+Model Name: Intel(R) Xeon(R) CPU E5540 @ 2.53GHz
+Physical CPUs: 2
+Cores per CPU: 4
+Total Processing Cores: 8
+Total Threads (including HT): 16
+
+
+
+
+Memory Info
+----------------
+Installed Memory: 72 GB
+Total Memory Slots: 18
+Memory Type: DDR3
+Memory Speed: 1333 MHz
+Memory Size(s):
+4096 MB (18)
+
+
+
+
+Disk Info
+---------------
+array A (SAS, Unused Space: 0 MB)
+logicaldrive 1 (136.7 GB, RAID 1, OK)
+physicaldrive 1I:1:1 (port 1I:box 1:bay 1, SAS, 146 GB, OK)
+physicaldrive 1I:1:2 (port 1I:box 1:bay 2, SAS, 146 GB, OK)
+array B (SAS, Unused Space: 0 MB)
+logicaldrive 2 (279.4 GB, RAID 1, OK)
+physicaldrive 2I:1:5 (port 2I:box 1:bay 5, SAS, 300 GB, OK)
+physicaldrive 2I:1:6 (port 2I:box 1:bay 6, SAS, 300 GB, OK)
+
+
+
+
+Software Information
+---------------
+Operating System: Red Hat Enterprise Linux Server release 6.3 (Santiago)
+</code></pre>
+
+<p>And here&rsquo;s the script:</p>
+
+<p>[gist id=&ldquo;4982876&rdquo;]</p>
+]]></content>
+  </entry>
+  
+</feed>
