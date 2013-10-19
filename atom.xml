@@ -4,7 +4,7 @@
   <title><![CDATA[You might find this interesting]]></title>
   <link href="http://adamrb.github.io/atom.xml" rel="self"/>
   <link href="http://adamrb.github.io/"/>
-  <updated>2013-10-18T22:06:02-04:00</updated>
+  <updated>2013-10-18T22:07:15-04:00</updated>
   <id>http://adamrb.github.io/</id>
   <author>
     <name><![CDATA[Adam Boeglin]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Troubleshooting coldfusion when the instancemanager won't load.]]></title>
-    <link href="http://adamrb.github.ioyear/08/13/troubleshooting-coldfusion-when-the-instancemanager-wont-load/"/>
+    <link href="http://adamrb.github.io/2013/08/13/troubleshooting-coldfusion-when-the-instancemanager-wont-load/"/>
     <updated>2013-08-13T16:45:41-04:00</updated>
-    <id>http://adamrb.github.ioyear/08/13/troubleshooting-coldfusion-when-the-instancemanager-wont-load</id>
+    <id>http://adamrb.github.io/2013/08/13/troubleshooting-coldfusion-when-the-instancemanager-wont-load</id>
     <content type="html"><![CDATA[<p>I ran into a problem where I was unable to create new instances because the ColdFusion instance manager wouldn&rsquo;t load when I clicked link.</p>
 
 <p><img src="https://teamworks.herffjones.com/ssg/SiteAssets/Documentation%20Wiki/Troubleshooting%20when%20the%20Instance%20Manager%20Won%27t%20Load/instance_manager.png" alt="instance_manager.png" /></p>
@@ -59,9 +59,9 @@
   
   <entry>
     <title type="html"><![CDATA[Display Markdown Text in a termal]]></title>
-    <link href="http://adamrb.github.ioyear/03/05/display-markdown-text-in-termal/"/>
+    <link href="http://adamrb.github.io/2013/03/05/display-markdown-text-in-termal/"/>
     <updated>2013-03-05T10:24:02-05:00</updated>
-    <id>http://adamrb.github.ioyear/03/05/display-markdown-text-in-termal</id>
+    <id>http://adamrb.github.io/2013/03/05/display-markdown-text-in-termal</id>
     <content type="html"><![CDATA[<p>I really like the idea of Markdown text.  Being able to write in a natural format and then quickly convert to HTML (or a PDF) appeals to me in a way that is difficult to explain.  I thought that Latex would solve this need, but it&rsquo;s far too complex to use on a regular basis for simple documents.</p>
 
 <p>Markdown does exactly what I want.  It&rsquo;s simple, easy to learn, natural syntax makes creating documentation a breeze.  I also want to be able to quickly display text in a terminal (because who wants formatting marks when you&rsquo;re actually trying to read something?).  There were a few solutions online, none of them I was happy with, so I&rsquo;ve chained a few tools together, threw it in a shell script and off we go.</p>
@@ -99,9 +99,9 @@
   
   <entry>
     <title type="html"><![CDATA[Parsing HP - RHEL System Information via SSH]]></title>
-    <link href="http://adamrb.github.ioyear/02/18/parsing-hp-rhel-system-information-via-ssh/"/>
+    <link href="http://adamrb.github.io/2013/02/18/parsing-hp-rhel-system-information-via-ssh/"/>
     <updated>2013-02-18T22:41:54-05:00</updated>
-    <id>http://adamrb.github.ioyear/02/18/parsing-hp-rhel-system-information-via-ssh</id>
+    <id>http://adamrb.github.io/2013/02/18/parsing-hp-rhel-system-information-via-ssh</id>
     <content type="html"><![CDATA[<p>I&rsquo;m often asked to give specifications quickly for systems I manage. I don&rsquo;t often know this off the top of my head&hellip; that&rsquo;s what computers are for.</p>
 
 <p>This script assumes a few things:</p>
@@ -169,9 +169,9 @@ Operating System: Red Hat Enterprise Linux Server release 6.3 (Santiago)
   
   <entry>
     <title type="html"><![CDATA[Progression of a Smartphone Geek]]></title>
-    <link href="http://adamrb.github.ioyear/10/12/progression-of-a-smartphone-geek/"/>
+    <link href="http://adamrb.github.io/2010/10/12/progression-of-a-smartphone-geek/"/>
     <updated>2010-10-12T13:31:33-04:00</updated>
-    <id>http://adamrb.github.ioyear/10/12/progression-of-a-smartphone-geek</id>
+    <id>http://adamrb.github.io/2010/10/12/progression-of-a-smartphone-geek</id>
     <content type="html"><![CDATA[<p>It&rsquo;s come to my attention that I&rsquo;ve owned a lot of smartphones in my day.  I&rsquo;ve decided to chronicle my journey.</p>
 
 <h2>HP Jornada 545 + Kyocera 2135:</h2>
@@ -311,9 +311,9 @@ RAM: 256MB</p>
   
   <entry>
     <title type="html"><![CDATA[Jump to Conclusions App]]></title>
-    <link href="http://adamrb.github.ioyear/07/30/jump-to-conclusions-app/"/>
+    <link href="http://adamrb.github.io/2010/07/30/jump-to-conclusions-app/"/>
     <updated>2010-07-30T13:00:30-04:00</updated>
-    <id>http://adamrb.github.ioyear/07/30/jump-to-conclusions-app</id>
+    <id>http://adamrb.github.io/2010/07/30/jump-to-conclusions-app</id>
     <content type="html"><![CDATA[<p>Anyone who knows me, knows I have a certain obsession with the movie office space. I have a few red Swingline staplers, Initech coffee mugs, and various T-Shirts.</p>
 
 <p>I decided that I was in need of a &ldquo;Jump to Conclusions&rdquo; app for my phone (for those difficult decisions). If you don&rsquo;t know what this is, it&rsquo;s based on the Jump to Conclusion mat described by Tom Smykowski as a &ldquo;Mat that you put on the floor, that has different &#8220;conclusions&rdquo; written on it that you can &ldquo;jump&rdquo; to&#8221;.</p>
@@ -334,9 +334,9 @@ RAM: 256MB</p>
   
   <entry>
     <title type="html"><![CDATA[iRex Reader 1000]]></title>
-    <link href="http://adamrb.github.ioyear/09/19/irex-reader-1000/"/>
+    <link href="http://adamrb.github.io/2008/09/19/irex-reader-1000/"/>
     <updated>2008-09-19T09:42:00-04:00</updated>
-    <id>http://adamrb.github.ioyear/09/19/irex-reader-1000</id>
+    <id>http://adamrb.github.io/2008/09/19/irex-reader-1000</id>
     <content type="html"><![CDATA[<p>Details are starting to emerge about iRex&rsquo;s new reading device lineup.</p>
 
 <p>There will be 3 10.2 ince devices.  One base model, one with the touch screen, and the third with wifi, bluetooth, and 3g.</p>
@@ -367,18 +367,18 @@ RAM: 256MB</p>
   
   <entry>
     <title type="html"><![CDATA[iLiad traveling to Germany]]></title>
-    <link href="http://adamrb.github.ioyear/02/22/iliad-traveling-to-germany/"/>
+    <link href="http://adamrb.github.io/2008/02/22/iliad-traveling-to-germany/"/>
     <updated>2008-02-22T08:35:00-05:00</updated>
-    <id>http://adamrb.github.ioyear/02/22/iliad-traveling-to-germany</id>
+    <id>http://adamrb.github.io/2008/02/22/iliad-traveling-to-germany</id>
     <content type="html"><![CDATA[<p>I&rsquo;ll be difficult, but I think I&rsquo;ll manage.  I&rsquo;ll be without my iLiad for at least the next week.  It&rsquo;s going in for the battery replacement program, and I&rsquo;ve opted for the upgraded backplane.  It&rsquo;s great that an early adopter will be able to have what is basically a 2nd edition iLiad.</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[First Midori/WebKit iLiad Beta Release]]></title>
-    <link href="http://adamrb.github.ioyear/02/21/first-midoriwebkit-iliad-beta-release/"/>
+    <link href="http://adamrb.github.io/2008/02/21/first-midoriwebkit-iliad-beta-release/"/>
     <updated>2008-02-21T15:27:00-05:00</updated>
-    <id>http://adamrb.github.ioyear/02/21/first-midoriwebkit-iliad-beta-release</id>
+    <id>http://adamrb.github.io/2008/02/21/first-midoriwebkit-iliad-beta-release</id>
     <content type="html"><![CDATA[<p>I&rsquo;ve created an early beta release for my port of the <a href="http://webkit.org/">Webkit</a> based <a href="http://software.twotoasts.de/?page=midori">Midori</a> internet browser.</p>
 
 <p>There are quite a few <a href="https://dev.mobileread.com/iliad/webkitbrowser/query">bugs that need to be worked out</a> before it&rsquo;s ready for the average user, but it works well enough as a tech demo.</p>
@@ -399,9 +399,9 @@ RAM: 256MB</p>
   
   <entry>
     <title type="html"><![CDATA[Building a better web browser]]></title>
-    <link href="http://adamrb.github.ioyear/02/14/building-a-better-web-browser/"/>
+    <link href="http://adamrb.github.io/2008/02/14/building-a-better-web-browser/"/>
     <updated>2008-02-14T08:44:00-05:00</updated>
-    <id>http://adamrb.github.ioyear/02/14/building-a-better-web-browser</id>
+    <id>http://adamrb.github.io/2008/02/14/building-a-better-web-browser</id>
     <content type="html"><![CDATA[<p>I don&rsquo;t know why, but I&rsquo;ve decided I really want a good, working, web browser on the iLiad.  Maybe it&rsquo;s Kindle envy, maybe I spend too much time porting when I should be working, who knows.</p>
 
 <p>WebKit seems to be all the rage these days.  They have builds of it for just about every platform, and the iPhone has really brought it into the mainstream.  So my goal is to port WebKit to the iLiad and provide a useful interface for browsing.</p>
@@ -423,9 +423,9 @@ WebKit is compiling now.  Next, I&rsquo;ll build Epiphany and use the webkit cor
   
   <entry>
     <title type="html"><![CDATA[Finally!: Integrated FBReader 0.8.14 with ePub and Registry Support]]></title>
-    <link href="http://adamrb.github.ioyear/02/12/finally-integrated-fbreader-0-8-14-with-epub-and-registry-support/"/>
+    <link href="http://adamrb.github.io/2008/02/12/finally-integrated-fbreader-0-8-14-with-epub-and-registry-support/"/>
     <updated>2008-02-12T10:11:00-05:00</updated>
-    <id>http://adamrb.github.ioyear/02/12/finally-integrated-fbreader-0-8-14-with-epub-and-registry-support</id>
+    <id>http://adamrb.github.io/2008/02/12/finally-integrated-fbreader-0-8-14-with-epub-and-registry-support</id>
     <content type="html"><![CDATA[<p>It&rsquo;s been about 6 months since my last port of FBReader.  The talented FBReader developers have done a lot.  The most important addition is the support for ePub books.  You can view the full changelog at <a href="http://www.fbreader.org/">FBReader.org</a>.</p>
 
 <p>I, myself, have done a lot of things different for this release as well.</p>
@@ -571,9 +571,9 @@ Because the toolbar is gone, most of the important functions can now be accessed
   
   <entry>
     <title type="html"><![CDATA[iRex Moving Forward with Community Project]]></title>
-    <link href="http://adamrb.github.ioyear/01/18/irex-moving-forward-with-community-project/"/>
+    <link href="http://adamrb.github.io/2008/01/18/irex-moving-forward-with-community-project/"/>
     <updated>2008-01-18T08:02:00-05:00</updated>
-    <id>http://adamrb.github.ioyear/01/18/irex-moving-forward-with-community-project</id>
+    <id>http://adamrb.github.io/2008/01/18/irex-moving-forward-with-community-project</id>
     <content type="html"><![CDATA[<p>You may have seen <a href="http://forum.irexnet.com/viewtopic.php?t=2051">a post on the iRex forums </a>about community development.</p>
 
 <p>Basically, iRex is trying to open up the iLiad as a development platform simlar to that of the <a href="http://www.maemo.org/">Nokia Tablets.</a>  Nokia&rsquo;s internet tablet platform is very popular because of the great documentation Nokia provides, the openness of the platform itself, and the ease that users can download and install new programs on their tablets.  I&rsquo;d like to see the same thing happen to the iLiad.</p>
@@ -649,9 +649,9 @@ This is just a small list.  I think that there&rsquo;s a lot of potential for th
   
   <entry>
     <title type="html"><![CDATA[FBReader port coming along nicely]]></title>
-    <link href="http://adamrb.github.ioyear/01/14/fbreader-port-coming-along-nicely/"/>
+    <link href="http://adamrb.github.io/2008/01/14/fbreader-port-coming-along-nicely/"/>
     <updated>2008-01-14T16:14:00-05:00</updated>
-    <id>http://adamrb.github.ioyear/01/14/fbreader-port-coming-along-nicely</id>
+    <id>http://adamrb.github.io/2008/01/14/fbreader-port-coming-along-nicely</id>
     <content type="html"><![CDATA[<p>My port of FBReader 0.8.10 is coming along very nicely.  I&rsquo;ve decided to go ahead with the limited functionality idea in order to speed up porting, and make it act more like a native iLiad application.</p>
 
 <p>You can see what&rsquo;s happening in the screenshot below:<br/>
@@ -681,9 +681,9 @@ There are a few things left to do before I can publish the port.  I&rsquo;d like
   
   <entry>
     <title type="html"><![CDATA[Idea: FBReader - Limited iLiad Edition]]></title>
-    <link href="http://adamrb.github.ioyear/01/08/idea-fbreader-limited-iliad-edition/"/>
+    <link href="http://adamrb.github.io/2008/01/08/idea-fbreader-limited-iliad-edition/"/>
     <updated>2008-01-08T17:07:00-05:00</updated>
-    <id>http://adamrb.github.ioyear/01/08/idea-fbreader-limited-iliad-edition</id>
+    <id>http://adamrb.github.io/2008/01/08/idea-fbreader-limited-iliad-edition</id>
     <content type="html"><![CDATA[<p>I&rsquo;m getting ready to start my port of FBReader 0.8.10 with epub support.  I can easilly get this working on the iLiad, however I want to speed up the screen refreshes by using only native refresh calls.  The problem is that in order to get these refreshes to work in the options dialog and FBReader library, a lot of time consuming manual test &amp; check work is required.</p>
 
 <p>I had a thought about limiting the features of FBReader and making it look and act more like a native iLiad viewer.  I think that if I completely disabled the top navigation bar, set the appropriate key bindings, and forced the user to launch all books directly from the contentlister, it would actually significantly decrease the amount of time it would take to release the port.</p>
@@ -696,9 +696,9 @@ There are a few things left to do before I can publish the port.  I&rsquo;d like
   
   <entry>
     <title type="html"><![CDATA[New Years Status Update]]></title>
-    <link href="http://adamrb.github.ioyear/01/07/new-years-status-update/"/>
+    <link href="http://adamrb.github.io/2008/01/07/new-years-status-update/"/>
     <updated>2008-01-07T14:10:00-05:00</updated>
-    <id>http://adamrb.github.ioyear/01/07/new-years-status-update</id>
+    <id>http://adamrb.github.io/2008/01/07/new-years-status-update</id>
     <content type="html"><![CDATA[<p>I haven&rsquo;t been active very much on my blog or the forums recently, but I&rsquo;m still around.</p>
 
 <p>It&rsquo;s been crazy at work and home the last few weeks.  I haven&rsquo;t had a spare minute to do any porting in a while.  Rest assured, I still plan to release a new port of FBReader with epub support.  However, getting time to do it has been pretty difficult.  All should calm down by next week, so hopefully I can put in some real effort in then.  I might try to time it with the 2.12 software release. ;)</p>
@@ -707,9 +707,9 @@ There are a few things left to do before I can publish the port.  I&rsquo;d like
   
   <entry>
     <title type="html"><![CDATA[How to Un-Brick your iLiad]]></title>
-    <link href="http://adamrb.github.ioyear/12/14/how-to-un-brick-your-iliad/"/>
+    <link href="http://adamrb.github.io/2007/12/14/how-to-un-brick-your-iliad/"/>
     <updated>2007-12-14T12:59:00-05:00</updated>
-    <id>http://adamrb.github.ioyear/12/14/how-to-un-brick-your-iliad</id>
+    <id>http://adamrb.github.io/2007/12/14/how-to-un-brick-your-iliad</id>
     <content type="html"><![CDATA[<p>So you&rsquo;ve gotten brave with programming on your iLiad.  You like to dig into the internals and write some scripts.  Maybe for <a href="http://www.mobileread.com/forums/showthread.php?t=12666&amp;highlight=comic">automatically downloading comics</a> or an <a href="http://www.mobileread.com/forums/showpost.php?p=77260&amp;postcount=35">MP3 Player from the contentlister</a>.  But something went wrong, and now your iLiad won&rsquo;t boot.  Don&rsquo;t worry, it happens.  I&rsquo;ve had to reflash a few times myself.  As long as you have firmware 2.11 and the developer package from iRex, you should be able to recover from most problems.</p>
 
 <p>I should note that I said should.  There are some things you can do to your iLiad that could cause problems that the reflash option won&rsquo;t fix.  The most important, is working with the embedded flash.  This includes the boot loader and the waveform.  Flashing these (you must use a special command), could cause your iLiad to be unusable.  But other than that, you should be fine to replace the Kernel, Initrd, and the root filesystem.</p>
@@ -753,9 +753,9 @@ You will see it going through steps that are very similar to updating the firmwa
   
   <entry>
     <title type="html"><![CDATA[So you want to try your first 3rd party program?]]></title>
-    <link href="http://adamrb.github.ioyear/12/13/so-you-want-to-try-your-first-3rd-party-program/"/>
+    <link href="http://adamrb.github.io/2007/12/13/so-you-want-to-try-your-first-3rd-party-program/"/>
     <updated>2007-12-13T13:00:00-05:00</updated>
-    <id>http://adamrb.github.ioyear/12/13/so-you-want-to-try-your-first-3rd-party-program</id>
+    <id>http://adamrb.github.io/2007/12/13/so-you-want-to-try-your-first-3rd-party-program</id>
     <content type="html"><![CDATA[<p>So you just got your brand new iLiad, or maybe you&rsquo;ve had it for a while but have grown comfortable enough that you&rsquo;d like to install one of the community applications.  Below, I&rsquo;ll detail a step by step guide on how to setup your iLiad to install a new application to it.</p>
 
 <p>First, a few notes:  You&rsquo;ve paid a lot for your iLiad and you don&rsquo;t want to break it.  This fact alone prevents a lot of people from trying out new programs.  There is good news though.  If something should happen while installing or running an application.  You should be able to restore your iLiad.  You will need a compact flash (CF) card.  I recommend anyone who&rsquo;s planning to install community applications to buy a CF card.  You can pick up a 1 Gigabyte card at any electronics store for under $30 US.  You should place all of your applications, along with the files needed to do a reflash should anything go wrong.</p>
@@ -826,9 +826,9 @@ Hopefully you now understand how to install 3rd party programs on your iLiad.  I
   
   <entry>
     <title type="html"><![CDATA[Thanks for Visiting]]></title>
-    <link href="http://adamrb.github.ioyear/12/11/thanks-for-visiting/"/>
+    <link href="http://adamrb.github.io/2007/12/11/thanks-for-visiting/"/>
     <updated>2007-12-11T13:00:00-05:00</updated>
-    <id>http://adamrb.github.ioyear/12/11/thanks-for-visiting</id>
+    <id>http://adamrb.github.io/2007/12/11/thanks-for-visiting</id>
     <content type="html"><![CDATA[<p>I just wanted to express my shock and amazement that I actually have people to regularly read this blog.  According to Google and FeedBurner, I have about 40 visitors a day, and 65 people who subscribe to this via an RSS feed.  They&rsquo;re small, modest numbers I know.  But surprising to me nonetheless.</p>
 
 <p>So my question to you is: What would you like to see more posts about?  General iLiad information?  More technically informative posts?  Status updates and future plans?  I generally only post when I have something big, but if you want more updates, I can do that too.</p>
@@ -837,18 +837,18 @@ Hopefully you now understand how to install 3rd party programs on your iLiad.  I
   
   <entry>
     <title type="html"><![CDATA[Days between firmware releases]]></title>
-    <link href="http://adamrb.github.ioyear/12/05/days-between-firmware-releases/"/>
+    <link href="http://adamrb.github.io/2007/12/05/days-between-firmware-releases/"/>
     <updated>2007-12-05T13:26:00-05:00</updated>
-    <id>http://adamrb.github.ioyear/12/05/days-between-firmware-releases</id>
+    <id>http://adamrb.github.io/2007/12/05/days-between-firmware-releases</id>
     <content type="html"><![CDATA[<p>It&rsquo;s been pretty quiet over at iRex lately, so I started to wonder.  How long has it been since firmware 2.11 was released?  It seems like forever.  So I decided to make a spreadsheet that details the amount of time between all of the firmware releases.  It&rsquo;s definitely on an upward scale, but I think the releases have gotten better and better.</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Palm Applications on the iLiad]]></title>
-    <link href="http://adamrb.github.ioyear/11/27/palm-applications-on-the-iliad/"/>
+    <link href="http://adamrb.github.io/2007/11/27/palm-applications-on-the-iliad/"/>
     <updated>2007-11-27T12:42:00-05:00</updated>
-    <id>http://adamrb.github.ioyear/11/27/palm-applications-on-the-iliad</id>
+    <id>http://adamrb.github.io/2007/11/27/palm-applications-on-the-iliad</id>
     <content type="html"><![CDATA[<p>A <a href="http://www.mobileread.com/forums/showthread.php?t=16291">post</a> on Mobileread got me thinking, having the Access Palm platform on the iLiad would be probably the greatest killer app.  Not only would you have full PIM support with sync capability, but you would immediately have access to the vast world of Palm applications.</p>
 
 <p>It&rsquo;s already been setup for the Nokia tablets. (<a href="http://www.access-company.com/products/gvm/">http://www.access-company.com/products/gvm/</a>).</p>
@@ -865,9 +865,9 @@ Hopefully you now understand how to install 3rd party programs on your iLiad.  I
   
   <entry>
     <title type="html"><![CDATA[Minimo Installer]]></title>
-    <link href="http://adamrb.github.ioyear/11/26/minimo-installer/"/>
+    <link href="http://adamrb.github.io/2007/11/26/minimo-installer/"/>
     <updated>2007-11-26T18:08:00-05:00</updated>
-    <id>http://adamrb.github.ioyear/11/26/minimo-installer</id>
+    <id>http://adamrb.github.io/2007/11/26/minimo-installer</id>
     <content type="html"><![CDATA[<p>I realize that I&rsquo;ve neglected my blog for a while.  I thought I would update it with some posts I&rsquo;ve made.  I get a bit of traffic from Google and places other than MobileRead, so it may help the people who stumble here.</p>
 
 <p>If you want to surf the web on your iLiad, I think the best way to do it is with Minimo.  It&rsquo;s a Mozilla based web browser that uses a rendering engine similar to Firefox.  It comes pre-installed on your iLiad, but is locked down in such a way that you can&rsquo;t surf the web with it by default.  I&rsquo;ve made some changes to the chrome files (the user interface), added a launcher, a modified libX11 to perform screen refreshes, and some connection manager scripts.  It works well enough so you can view full web pages on your iLiad.  Javascript is a little slow, and you may sometimes run into a &ldquo;script not responding&rdquo; error.  But if I tell it to continue, it&rsquo;ll usually load just fine.</p>
