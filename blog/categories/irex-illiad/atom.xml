@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: iRex Illiad | My Octopress Blog]]></title>
+  <title><![CDATA[Category: iRex Illiad | You might find this interesting]]></title>
   <link href="http://adamrb.github.io/blog/categories/irex-illiad/atom.xml" rel="self"/>
   <link href="http://adamrb.github.io/"/>
-  <updated>2013-10-18T21:43:54-04:00</updated>
+  <updated>2013-10-18T21:48:24-04:00</updated>
   <id>http://adamrb.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Adam Boeglin]]></name>
     <email><![CDATA[adamrb@gmail.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
