@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>iRex Moving Forward with Community Project - You might find this interesting</title>
+  <meta name="author" content="Adam Boeglin">
+
+  
+  <meta name="description" content="You may have seen a post on the iRex forums about community development. Basically, iRex is trying to open up the iLiad as a development platform &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://adamrb.github.ioyear/01/18/irex-moving-forward-with-community-project">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="You might find this interesting" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">You might find this interesting</a></h1>
+  
+    <h2>Or I might be wrong</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:adamrb.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">iRex Moving Forward With Community Project</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-01-18T08:02:00-05:00" pubdate data-updated="true">Jan 18<span>th</span>, 2008</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>You may have seen <a href="http://forum.irexnet.com/viewtopic.php?t=2051">a post on the iRex forums </a>about community development.</p>
+
+<p>Basically, iRex is trying to open up the iLiad as a development platform simlar to that of the <a href="http://www.maemo.org/">Nokia Tablets.</a>  Nokia&rsquo;s internet tablet platform is very popular because of the great documentation Nokia provides, the openness of the platform itself, and the ease that users can download and install new programs on their tablets.  I&rsquo;d like to see the same thing happen to the iLiad.</p>
+
+<p>In the<a href="http://forum.irexnet.com/viewtopic.php?p=10982#10982"> most recent post by Karel</a>, he&rsquo;s asking for those willing to take a more active role in the proposed community to email him.  I have done so, and plan to help bring this community to life.  Right now, iLiad development is unorganized, and difficult for a new user to get into.  Hopefully, with iRex&rsquo;s help, we can overcome that.</p>
+
+<p>I&rsquo;m going to lay out a few things that I think the iLiad and community need.</p>
+
+<ul>
+<li>Installation
+
+<ul>
+<li>Right now, it&rsquo;s very difficult for a user to install a 3rd party application.  They have to request shell access, find the program they want to install.  Download and unzip it, then run it on the iLiad.  This can be confusing, and can cause many problems along the way.</li>
+<li>There could be a few ways to solve this.  The new community can have a page with tested and working applications.  The user can sign into that page with their myIrex username/password, select the application and have it downloaded via the IDS.</li>
+<li>Or, there can be a program like that on the iPhone, where the application connects to a list of feeds and displays a list of available apps to the user with a one-click installation method.</li>
+<li>Lastly, there&rsquo;s the more crude, but effective method of supporting ipkg through the contentlister.  The user downloads the ipk from a website, copies it to the iLiad, and it installs with a single click.
+
+<ul>
+<li>All of the above methods would require some intervention from iRex, either with the website, or changes to the internal software.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Adding new viewers
+
+<ul>
+<li><p>There needs to be a better way to add and remove new viewers and supported formats to the contentlister.  Right now, one needs to use a sed script to modify the registry.  This can be prone to errors and removing afterward is very difficult.</p>
+
+<ul>
+<li>I thing that  new directory for &ldquo;Plugins&rdquo; should be added.</li>
+<li>The package installer can copy an xml (or any other file) into that directory with the extension supported being the file name.</li>
+<li>Inside the XML file, the program that is used to read the file will be listed, along with the icon to be used.
+
+<ul>
+<li>For epub for example.</li>
+<li><p>\mnt\setttings\registry\plugins\epub.xml
+                                 epub.xml:<br/>
+<code>                                             /usr/local/bin/FBREADER  
+                               /usr/local/share/icons/epub.png</code></p></li>
+<li><p>It could be as simple as that.  This way, if you have two different programs that support epub, you can overwrite the existing configuration with that of the new program.  This wouldn&rsquo;t change the registry in any way, and if an error occured, the contentlister could ignore the plugins directory the next time it launched.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Screen Refreshes!
+
+<ul>
+<li>Right now, the biggest problem with porting any application is getting the screen refreshes.  If this could somehow be made easier for developers, I think that the iLiad would have an influx of new applications available for it.  Could this be added to GTK within the iLiad?  This way the application would work as normal, and GTK would refresh when everything was done being painted.<br/>
+For the end user:</li>
+</ul>
+</li>
+<li>Documentation, Code, Website enhancements
+
+<ul>
+<li>This new site is going to need to be well organized and provide lots of information.  I can think of a few things it&rsquo;ll need.
+
+<ul>
+<li>A way to track ongoing ports and their status</li>
+<li>A bounty system for users to request new applications</li>
+<li>Documentation on internal iLiad functions</li>
+<li>Open source the UI compontents, ContentLister, note application, browser app, etc
+This is just a small list.  I think that there&rsquo;s a lot of potential for the iLiad that&rsquo;s not being realized.  I hope this new initiative can solve that.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">admin</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-01-18T08:02:00-05:00" pubdate data-updated="true">Jan 18<span>th</span>, 2008</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/irex-illiad/'>iRex Illiad</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://adamrb.github.ioyear/01/18/irex-moving-forward-with-community-project/" data-via="adam_rb" data-counturl="http://adamrb.github.ioyear/01/18/irex-moving-forward-with-community-project/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="year/01/14/fbreader-port-coming-along-nicely/" title="Previous Post: FBReader port coming along nicely">&laquo; FBReader port coming along nicely</a>
+      
+      
+        <a class="basic-alignment right" href="year/02/12/finally-integrated-fbreader-0-8-14-with-epub-and-registry-support/" title="Next Post: Finally!: Integrated FBReader 0.8.14 with ePub and Registry Support">Finally!: Integrated FBReader 0.8.14 with ePub and Registry Support &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="year/08/13/troubleshooting-coldfusion-when-the-instancemanager-wont-load/">Troubleshooting Coldfusion When the Instancemanager Won't Load.</a>
+      </li>
+    
+      <li class="post">
+        <a href="year/03/05/display-markdown-text-in-termal/">Display Markdown Text in a Termal</a>
+      </li>
+    
+      <li class="post">
+        <a href="year/02/18/parsing-hp-rhel-system-information-via-ssh/">Parsing HP - RHEL System Information via SSH</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/adamrb">@adamrb</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'adamrb',
+            count: 5,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/113977874267213949305?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Adam Boeglin -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

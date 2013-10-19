@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Sysadmin Stuff | You might find this interesting]]></title>
   <link href="http://adamrb.github.io/blog/categories/sysadmin-stuff/atom.xml" rel="self"/>
   <link href="http://adamrb.github.io/"/>
-  <updated>2013-10-18T21:59:28-04:00</updated>
+  <updated>2013-10-18T22:06:02-04:00</updated>
   <id>http://adamrb.github.io/</id>
   <author>
     <name><![CDATA[Adam Boeglin]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Display Markdown Text in a termal]]></title>
-    <link href="http://adamrb.github.io/blog/2013/03/05/display-markdown-text-in-termal/"/>
+    <link href="http://adamrb.github.ioyear/03/05/display-markdown-text-in-termal/"/>
     <updated>2013-03-05T10:24:02-05:00</updated>
-    <id>http://adamrb.github.io/blog/2013/03/05/display-markdown-text-in-termal</id>
+    <id>http://adamrb.github.ioyear/03/05/display-markdown-text-in-termal</id>
     <content type="html"><![CDATA[<p>I really like the idea of Markdown text.  Being able to write in a natural format and then quickly convert to HTML (or a PDF) appeals to me in a way that is difficult to explain.  I thought that Latex would solve this need, but it&rsquo;s far too complex to use on a regular basis for simple documents.</p>
 
 <p>Markdown does exactly what I want.  It&rsquo;s simple, easy to learn, natural syntax makes creating documentation a breeze.  I also want to be able to quickly display text in a terminal (because who wants formatting marks when you&rsquo;re actually trying to read something?).  There were a few solutions online, none of them I was happy with, so I&rsquo;ve chained a few tools together, threw it in a shell script and off we go.</p>
@@ -55,9 +55,9 @@
   
   <entry>
     <title type="html"><![CDATA[Parsing HP - RHEL System Information via SSH]]></title>
-    <link href="http://adamrb.github.io/blog/2013/02/18/parsing-hp-rhel-system-information-via-ssh/"/>
+    <link href="http://adamrb.github.ioyear/02/18/parsing-hp-rhel-system-information-via-ssh/"/>
     <updated>2013-02-18T22:41:54-05:00</updated>
-    <id>http://adamrb.github.io/blog/2013/02/18/parsing-hp-rhel-system-information-via-ssh</id>
+    <id>http://adamrb.github.ioyear/02/18/parsing-hp-rhel-system-information-via-ssh</id>
     <content type="html"><![CDATA[<p>I&rsquo;m often asked to give specifications quickly for systems I manage. I don&rsquo;t often know this off the top of my head&hellip; that&rsquo;s what computers are for.</p>
 
 <p>This script assumes a few things:</p>
